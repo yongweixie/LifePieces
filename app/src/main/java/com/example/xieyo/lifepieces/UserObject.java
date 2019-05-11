@@ -8,7 +8,7 @@ public class UserObject extends   BmobObject {
     private String objectdata;
 
     public UserObject() {
-        this.setTableName(UserBaseInfo.UserName);
+        this.setTableName("u"+UserBaseInfo.UserName);
     }
     public void setObjecttime(String objecttime){this.objecttime=objecttime;}
     public void setObjectname(String objectname){this.objectname=objectname;}

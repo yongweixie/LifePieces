@@ -693,7 +693,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                         {
                             objecttime=time.group(1);
                            // if (message.contains(objectname))
-                          //  Log.i("bmob","查询成功："+objecttime);
+                            Log.i("bmob","查询成功："+objecttime);
 
                            // addlefttext(objectname+"是"+objecttime);
                             if(message.contains("多久了"))
@@ -713,14 +713,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                         }
                         else
                         {
-                           // addlefttext("对不起，，没有查到");
-
+                            Log.i("123456", "done: "+"1234");
+                            addlefttext("对不起，, ，没有查到");
                         }
 
                     }
                     else
                         {
-                        Log.i("bmob","失败："+e.getMessage()+","+e.getErrorCode());
+                            Log.i("123456", "done: "+e.toString());
+                            Log.i("bmob","失败："+e.getMessage()+","+e.getErrorCode());
                         }
                 }
             });
@@ -874,8 +875,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                     }
                 }
             });
-
-
 
 
         } catch (JSONException e) {
